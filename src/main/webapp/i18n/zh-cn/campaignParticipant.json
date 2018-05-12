@@ -1,0 +1,26 @@
+
+{
+    "abcdeApp": {
+        "campaignParticipant" : {
+            "home": {
+                "title": "Campaign Participants",
+                "createLabel": "创建新 Campaign Participant",
+                "createOrEditLabel": "创建或编辑 Campaign Participant"
+            },
+            "created": "Campaign Participant {{ param }} 创建成功",
+            "updated": "Campaign Participant {{ param }} 更新成功",
+            "deleted": "Campaign Participant {{ param }} 删除成功",
+            "delete": {
+                "question": "你确定要删除 Campaign Participant {{ id }} 吗？"
+            },
+            "detail": {
+                "title": "Campaign Participant"
+            },
+            "name": "Name",
+            "email": "Email",
+            "uniqueURL": "Unique URL",
+            "points": "Points",
+            "campaignDetails": "Campaign Details"
+        }
+    }
+}

@@ -1,0 +1,36 @@
+
+<div *ngIf="campaignWinner">
+    <h2><span jhiTranslate="abcdeApp.campaignWinner.detail.title">Campaign Winner</span> {{campaignWinner.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="abcdeApp.campaignWinner.winnerId">Winner Id</span></dt>
+        <dd>
+            <span>{{campaignWinner.winnerId}}</span>
+        </dd>
+        <dt><span jhiTranslate="abcdeApp.campaignWinner.winnerPrize">Winner Prize</span></dt>
+        <dd>
+            <span>{{campaignWinner.winnerPrize}}</span>
+        </dd>
+        <dt><span jhiTranslate="abcdeApp.campaignWinner.campaignDetails">Campaign Details</span></dt>
+        <dd>
+            <div *ngIf="campaignWinner.campaignDetails">
+                <a [routerLink]="['/campaign-details', campaignWinner.campaignDetails?.id]">{{campaignWinner.campaignDetails?.id}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'campaign-winner/'+ campaignWinner.id + '/edit'} }]"
+            replaceUrl="true"
+            queryParamsHandling="merge"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

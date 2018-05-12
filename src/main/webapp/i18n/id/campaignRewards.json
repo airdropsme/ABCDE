@@ -1,0 +1,24 @@
+
+{
+    "abcdeApp": {
+        "campaignRewards" : {
+            "home": {
+                "title": "Campaign Rewards",
+                "createLabel": "Buat Campaign Rewards baru",
+                "createOrEditLabel": "Buat atau edit Campaign Rewards"
+            },
+            "created": "Campaign Rewards dengan id {{ param }} telah dibuat",
+            "updated": "Campaign Rewards dengan id {{ param }} telah diperbaharui",
+            "deleted": "Campaign Rewards dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Campaign Rewards {{ id }}?"
+            },
+            "detail": {
+                "title": "Campaign Rewards"
+            },
+            "rewardType": "Reward Type",
+            "rewardTotal": "Reward Total",
+            "campaignDetails": "Campaign Details"
+        }
+    }
+}

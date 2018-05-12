@@ -1,0 +1,25 @@
+
+{
+    "abcdeApp": {
+        "airdropDetails" : {
+            "home": {
+                "title": "Airdrop Details",
+                "createLabel": "Buat Airdrop Details baru",
+                "createOrEditLabel": "Buat atau edit Airdrop Details"
+            },
+            "created": "Airdrop Details dengan id {{ param }} telah dibuat",
+            "updated": "Airdrop Details dengan id {{ param }} telah diperbaharui",
+            "deleted": "Airdrop Details dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Airdrop Details {{ id }}?"
+            },
+            "detail": {
+                "title": "Airdrop Details"
+            },
+            "title": "Title",
+            "currencyName": "Currency Name",
+            "currencyType": "Currency Type",
+            "contractAddress": "Contract Address"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+
+{
+    "abcdeApp": {
+        "campaignWinner" : {
+            "home": {
+                "title": "Campaign Winners",
+                "createLabel": "Thêm mới một Campaign Winner",
+                "createOrEditLabel": "Thêm mới hoặc cập nhật Campaign Winner"
+            },
+            "created": "Một Campaign Winner mới được tạo với định danh {{ param }}",
+            "updated": "Một Campaign Winner cập nhật với định danh {{ param }}",
+            "deleted": "Một Campaign Winner đã xóa với định danh {{ param }}",
+            "delete": {
+                "question": "Bạn có chắc là muốn xóa Campaign Winner {{ id }}?"
+            },
+            "detail": {
+                "title": "Campaign Winner"
+            },
+            "winnerId": "Winner Id",
+            "winnerPrize": "Winner Prize",
+            "campaignDetails": "Campaign Details"
+        }
+    }
+}

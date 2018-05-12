@@ -1,0 +1,24 @@
+
+{
+    "abcdeApp": {
+        "campaignAnalaytics" : {
+            "home": {
+                "title": "Campaign Analaytics",
+                "createLabel": "Crear nuevo Campaign Analaytics",
+                "createOrEditLabel": "Crear o editar Campaign Analaytics"
+            },
+            "created": "Un nuevo Campaign Analaytics ha sido creado con el identificador {{ param }}",
+            "updated": "Un Campaign Analaytics ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Campaign Analaytics ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Campaign Analaytics {{ id }}?"
+            },
+            "detail": {
+                "title": "Campaign Analaytics"
+            },
+            "views": "Views",
+            "referralCount": "Referral Count",
+            "campaignDetails": "Campaign Details"
+        }
+    }
+}

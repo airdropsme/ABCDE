@@ -1,0 +1,89 @@
+<form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+
+    <div class="modal-header">
+        <h4 class="modal-title" id="myCampaignDetailsLabel" jhiTranslate="abcdeApp.campaignDetails.home.createOrEditLabel">Create or edit a Campaign Details</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                (click)="clear()">&times;</button>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" [hidden]="!campaignDetails.id">
+            <label for="id" jhiTranslate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                   [(ngModel)]="campaignDetails.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="abcdeApp.campaignDetails.title" for="field_title">Title</label>
+            <input type="text" class="form-control" name="title" id="field_title"
+                [(ngModel)]="campaignDetails.title" />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="abcdeApp.campaignDetails.status" for="field_status">Status</label>
+            <input type="text" class="form-control" name="status" id="field_status"
+                [(ngModel)]="campaignDetails.status" />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="abcdeApp.campaignDetails.campaignType" for="field_campaignType">Campaign Type</label>
+            <input type="text" class="form-control" name="campaignType" id="field_campaignType"
+                [(ngModel)]="campaignDetails.campaignType" />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="abcdeApp.campaignDetails.campaignPageUrl" for="field_campaignPageUrl">Campaign Page Url</label>
+            <input type="text" class="form-control" name="campaignPageUrl" id="field_campaignPageUrl"
+                [(ngModel)]="campaignDetails.campaignPageUrl" />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="abcdeApp.campaignDetails.prizeValue" for="field_prizeValue">Prize Value</label>
+            <input type="number" class="form-control" name="prizeValue" id="field_prizeValue"
+                [(ngModel)]="campaignDetails.prizeValue" />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="abcdeApp.campaignDetails.terms" for="field_terms">Terms</label>
+            <input type="text" class="form-control" name="terms" id="field_terms"
+                [(ngModel)]="campaignDetails.terms" />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="abcdeApp.campaignDetails.startdate" for="field_startdate">Startdate</label>
+            <div class="input-group">
+                <input id="field_startdate" type="text" class="form-control" name="startdate" ngbDatepicker  #startdateDp="ngbDatepicker" [(ngModel)]="campaignDetails.startdate"
+                />
+                <span class="input-group-append">
+                    <button type="button" class="btn btn-secondary" (click)="startdateDp.toggle()"><i class="fa fa-calendar"></i></button>
+                </span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="abcdeApp.campaignDetails.enddate" for="field_enddate">Enddate</label>
+            <div class="input-group">
+                <input id="field_enddate" type="text" class="form-control" name="enddate" ngbDatepicker  #enddateDp="ngbDatepicker" [(ngModel)]="campaignDetails.enddate"
+                />
+                <span class="input-group-append">
+                    <button type="button" class="btn btn-secondary" (click)="enddateDp.toggle()"><i class="fa fa-calendar"></i></button>
+                </span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="abcdeApp.campaignDetails.airdropDetails" for="field_airdropDetails">Airdrop Details</label>
+            <select class="form-control" id="field_airdropDetails" name="airdropDetails" [(ngModel)]="campaignDetails.airdropDetails">
+                <option [ngValue]="null"></option>
+                <option [ngValue]="airdropDetailsOption.id === campaignDetails.airdropDetails?.id ? campaignDetails.airdropDetails : airdropDetailsOption" *ngFor="let airdropDetailsOption of airdropdetails; trackBy: trackAirdropDetailsById">{{airdropDetailsOption.id}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="abcdeApp.campaignDetails.registeredUser" for="field_registeredUser">Registered User</label>
+            <select class="form-control" id="field_registeredUser" name="registeredUser" [(ngModel)]="campaignDetails.registeredUser">
+                <option [ngValue]="null"></option>
+                <option [ngValue]="registeredUserOption.id === campaignDetails.registeredUser?.id ? campaignDetails.registeredUser : registeredUserOption" *ngFor="let registeredUserOption of registeredusers; trackBy: trackRegisteredUserById">{{registeredUserOption.id}}</option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="clear()">
+            <span class="fa fa-ban"></span>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+            <span class="fa fa-save"></span>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

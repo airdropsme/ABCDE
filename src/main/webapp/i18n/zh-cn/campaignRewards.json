@@ -1,0 +1,24 @@
+
+{
+    "abcdeApp": {
+        "campaignRewards" : {
+            "home": {
+                "title": "Campaign Rewards",
+                "createLabel": "创建新 Campaign Rewards",
+                "createOrEditLabel": "创建或编辑 Campaign Rewards"
+            },
+            "created": "Campaign Rewards {{ param }} 创建成功",
+            "updated": "Campaign Rewards {{ param }} 更新成功",
+            "deleted": "Campaign Rewards {{ param }} 删除成功",
+            "delete": {
+                "question": "你确定要删除 Campaign Rewards {{ id }} 吗？"
+            },
+            "detail": {
+                "title": "Campaign Rewards"
+            },
+            "rewardType": "Reward Type",
+            "rewardTotal": "Reward Total",
+            "campaignDetails": "Campaign Details"
+        }
+    }
+}

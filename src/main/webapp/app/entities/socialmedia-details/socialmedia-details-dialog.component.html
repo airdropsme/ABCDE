@@ -1,0 +1,52 @@
+<form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+
+    <div class="modal-header">
+        <h4 class="modal-title" id="mySocialmediaDetailsLabel" jhiTranslate="abcdeApp.socialmediaDetails.home.createOrEditLabel">Create or edit a Socialmedia Details</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                (click)="clear()">&times;</button>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" [hidden]="!socialmediaDetails.id">
+            <label for="id" jhiTranslate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                   [(ngModel)]="socialmediaDetails.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="abcdeApp.socialmediaDetails.facebook" for="field_facebook">Facebook</label>
+            <input type="text" class="form-control" name="facebook" id="field_facebook"
+                [(ngModel)]="socialmediaDetails.facebook" />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="abcdeApp.socialmediaDetails.twitter" for="field_twitter">Twitter</label>
+            <input type="text" class="form-control" name="twitter" id="field_twitter"
+                [(ngModel)]="socialmediaDetails.twitter" />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="abcdeApp.socialmediaDetails.pinterest" for="field_pinterest">Pinterest</label>
+            <input type="text" class="form-control" name="pinterest" id="field_pinterest"
+                [(ngModel)]="socialmediaDetails.pinterest" />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="abcdeApp.socialmediaDetails.youtube" for="field_youtube">Youtube</label>
+            <input type="text" class="form-control" name="youtube" id="field_youtube"
+                [(ngModel)]="socialmediaDetails.youtube" />
+        </div>
+
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="abcdeApp.socialmediaDetails.campaignDetails" for="field_campaignDetails">Campaign Details</label>
+            <select class="form-control" id="field_campaignDetails" name="campaignDetails" [(ngModel)]="socialmediaDetails.campaignDetails" >
+                <option [ngValue]="null"></option>
+                <option [ngValue]="campaignDetailsOption.id === socialmediaDetails.campaignDetails?.id ? socialmediaDetails.campaignDetails : campaignDetailsOption" *ngFor="let campaignDetailsOption of campaigndetails; trackBy: trackCampaignDetailsById">{{campaignDetailsOption.id}}</option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="clear()">
+            <span class="fa fa-ban"></span>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+            <span class="fa fa-save"></span>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

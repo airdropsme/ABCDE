@@ -1,0 +1,25 @@
+
+{
+    "abcdeApp": {
+        "registeredUser" : {
+            "home": {
+                "title": "Registered Users",
+                "createLabel": "Crear nuevo Registered User",
+                "createOrEditLabel": "Crear o editar Registered User"
+            },
+            "created": "Un nuevo Registered User ha sido creado con el identificador {{ param }}",
+            "updated": "Un Registered User ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Registered User ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Registered User {{ id }}?"
+            },
+            "detail": {
+                "title": "Registered User"
+            },
+            "joinDate": "Join Date",
+            "accountPlan": "Account Plan",
+            "email": "Email",
+            "emailVerified": "Email Verified"
+        }
+    }
+}

@@ -1,0 +1,26 @@
+
+{
+    "abcdeApp": {
+        "campaignParticipant" : {
+            "home": {
+                "title": "Campaign Participants",
+                "createLabel": "Crear nuevo Campaign Participant",
+                "createOrEditLabel": "Crear o editar Campaign Participant"
+            },
+            "created": "Un nuevo Campaign Participant ha sido creado con el identificador {{ param }}",
+            "updated": "Un Campaign Participant ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Campaign Participant ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Campaign Participant {{ id }}?"
+            },
+            "detail": {
+                "title": "Campaign Participant"
+            },
+            "name": "Name",
+            "email": "Email",
+            "uniqueURL": "Unique URL",
+            "points": "Points",
+            "campaignDetails": "Campaign Details"
+        }
+    }
+}

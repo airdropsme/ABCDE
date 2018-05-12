@@ -1,0 +1,25 @@
+
+{
+    "abcdeApp": {
+        "emailProvider" : {
+            "home": {
+                "title": "Email Providers",
+                "createLabel": "Buat Email Provider baru",
+                "createOrEditLabel": "Buat atau edit Email Provider"
+            },
+            "created": "Email Provider dengan id {{ param }} telah dibuat",
+            "updated": "Email Provider dengan id {{ param }} telah diperbaharui",
+            "deleted": "Email Provider dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Email Provider {{ id }}?"
+            },
+            "detail": {
+                "title": "Email Provider"
+            },
+            "name": "Name",
+            "connected": "Connected",
+            "apiKey": "Api Key",
+            "campaignDetails": "Campaign Details"
+        }
+    }
+}

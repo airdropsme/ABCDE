@@ -1,0 +1,37 @@
+
+{
+    "abcdeApp": {
+        "campaignDetails" : {
+            "home": {
+                "title": "Campaign Details",
+                "createLabel": "Crear nuevo Campaign Details",
+                "createOrEditLabel": "Crear o editar Campaign Details"
+            },
+            "created": "Un nuevo Campaign Details ha sido creado con el identificador {{ param }}",
+            "updated": "Un Campaign Details ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Campaign Details ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Campaign Details {{ id }}?"
+            },
+            "detail": {
+                "title": "Campaign Details"
+            },
+            "title": "Title",
+            "status": "Status",
+            "campaignType": "Campaign Type",
+            "campaignPageUrl": "Campaign Page Url",
+            "prizeValue": "Prize Value",
+            "terms": "Terms",
+            "startdate": "Startdate",
+            "enddate": "Enddate",
+            "airdropDetails": "Airdrop Details",
+            "registeredUser": "Registered User",
+            "campaignanAlaytics": "Campaignan Alaytics",
+            "campaignParticipant": "Campaign Participant",
+            "socialmediaDetails": "Socialmedia Details",
+            "campaignWinner": "Campaign Winner",
+            "emailProvider": "Email Provider",
+            "campaignRewards": "Campaign Rewards"
+        }
+    }
+}

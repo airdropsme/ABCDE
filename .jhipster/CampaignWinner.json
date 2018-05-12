@@ -1,0 +1,27 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "campaignDetails",
+            "otherEntityName": "campaignDetails",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "winnerId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "winnerPrize",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180512095535",
+    "entityTableName": "campaign_winner",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

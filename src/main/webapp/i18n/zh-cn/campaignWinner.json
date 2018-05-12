@@ -1,0 +1,24 @@
+
+{
+    "abcdeApp": {
+        "campaignWinner" : {
+            "home": {
+                "title": "Campaign Winners",
+                "createLabel": "创建新 Campaign Winner",
+                "createOrEditLabel": "创建或编辑 Campaign Winner"
+            },
+            "created": "Campaign Winner {{ param }} 创建成功",
+            "updated": "Campaign Winner {{ param }} 更新成功",
+            "deleted": "Campaign Winner {{ param }} 删除成功",
+            "delete": {
+                "question": "你确定要删除 Campaign Winner {{ id }} 吗？"
+            },
+            "detail": {
+                "title": "Campaign Winner"
+            },
+            "winnerId": "Winner Id",
+            "winnerPrize": "Winner Prize",
+            "campaignDetails": "Campaign Details"
+        }
+    }
+}

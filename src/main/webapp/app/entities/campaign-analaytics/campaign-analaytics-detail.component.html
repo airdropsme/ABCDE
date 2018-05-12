@@ -1,0 +1,36 @@
+
+<div *ngIf="campaignAnalaytics">
+    <h2><span jhiTranslate="abcdeApp.campaignAnalaytics.detail.title">Campaign Analaytics</span> {{campaignAnalaytics.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="abcdeApp.campaignAnalaytics.views">Views</span></dt>
+        <dd>
+            <span>{{campaignAnalaytics.views}}</span>
+        </dd>
+        <dt><span jhiTranslate="abcdeApp.campaignAnalaytics.referralCount">Referral Count</span></dt>
+        <dd>
+            <span>{{campaignAnalaytics.referralCount}}</span>
+        </dd>
+        <dt><span jhiTranslate="abcdeApp.campaignAnalaytics.campaignDetails">Campaign Details</span></dt>
+        <dd>
+            <div *ngIf="campaignAnalaytics.campaignDetails">
+                <a [routerLink]="['/campaign-details', campaignAnalaytics.campaignDetails?.id]">{{campaignAnalaytics.campaignDetails?.id}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'campaign-analaytics/'+ campaignAnalaytics.id + '/edit'} }]"
+            replaceUrl="true"
+            queryParamsHandling="merge"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

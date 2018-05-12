@@ -1,0 +1,35 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "campaignDetails",
+            "otherEntityName": "campaignDetails",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "email",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "uniqueURL",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "points",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20180512095532",
+    "entityTableName": "campaign_participant",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

@@ -1,0 +1,38 @@
+
+<div *ngIf="airdropDetails">
+    <h2><span jhiTranslate="abcdeApp.airdropDetails.detail.title">Airdrop Details</span> {{airdropDetails.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="abcdeApp.airdropDetails.title">Title</span></dt>
+        <dd>
+            <span>{{airdropDetails.title}}</span>
+        </dd>
+        <dt><span jhiTranslate="abcdeApp.airdropDetails.currencyName">Currency Name</span></dt>
+        <dd>
+            <span>{{airdropDetails.currencyName}}</span>
+        </dd>
+        <dt><span jhiTranslate="abcdeApp.airdropDetails.currencyType">Currency Type</span></dt>
+        <dd>
+            <span>{{airdropDetails.currencyType}}</span>
+        </dd>
+        <dt><span jhiTranslate="abcdeApp.airdropDetails.contractAddress">Contract Address</span></dt>
+        <dd>
+            <span>{{airdropDetails.contractAddress}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'airdrop-details/'+ airdropDetails.id + '/edit'} }]"
+            replaceUrl="true"
+            queryParamsHandling="merge"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

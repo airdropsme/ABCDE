@@ -1,0 +1,24 @@
+
+{
+    "abcdeApp": {
+        "campaignRewards" : {
+            "home": {
+                "title": "Campaign Rewards",
+                "createLabel": "Создать новый Campaign Rewards",
+                "createOrEditLabel": "Создать или отредактировать Campaign Rewards"
+            },
+            "created": "Новый Campaign Rewards создан с идентификатором {{ param }}",
+            "updated": "Campaign Rewards обновлен с идентификатором {{ param }}",
+            "deleted": "Campaign Rewards удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Campaign Rewards {{ id }}?"
+            },
+            "detail": {
+                "title": "Campaign Rewards"
+            },
+            "rewardType": "Reward Type",
+            "rewardTotal": "Reward Total",
+            "campaignDetails": "Campaign Details"
+        }
+    }
+}

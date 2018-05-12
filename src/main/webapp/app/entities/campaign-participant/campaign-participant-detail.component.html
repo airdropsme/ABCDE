@@ -1,0 +1,44 @@
+
+<div *ngIf="campaignParticipant">
+    <h2><span jhiTranslate="abcdeApp.campaignParticipant.detail.title">Campaign Participant</span> {{campaignParticipant.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="abcdeApp.campaignParticipant.name">Name</span></dt>
+        <dd>
+            <span>{{campaignParticipant.name}}</span>
+        </dd>
+        <dt><span jhiTranslate="abcdeApp.campaignParticipant.email">Email</span></dt>
+        <dd>
+            <span>{{campaignParticipant.email}}</span>
+        </dd>
+        <dt><span jhiTranslate="abcdeApp.campaignParticipant.uniqueURL">Unique URL</span></dt>
+        <dd>
+            <span>{{campaignParticipant.uniqueURL}}</span>
+        </dd>
+        <dt><span jhiTranslate="abcdeApp.campaignParticipant.points">Points</span></dt>
+        <dd>
+            <span>{{campaignParticipant.points}}</span>
+        </dd>
+        <dt><span jhiTranslate="abcdeApp.campaignParticipant.campaignDetails">Campaign Details</span></dt>
+        <dd>
+            <div *ngIf="campaignParticipant.campaignDetails">
+                <a [routerLink]="['/campaign-details', campaignParticipant.campaignDetails?.id]">{{campaignParticipant.campaignDetails?.id}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'campaign-participant/'+ campaignParticipant.id + '/edit'} }]"
+            replaceUrl="true"
+            queryParamsHandling="merge"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

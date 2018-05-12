@@ -1,0 +1,24 @@
+
+{
+    "abcdeApp": {
+        "campaignWinner" : {
+            "home": {
+                "title": "Campaign Winners",
+                "createLabel": "Buat Campaign Winner baru",
+                "createOrEditLabel": "Buat atau edit Campaign Winner"
+            },
+            "created": "Campaign Winner dengan id {{ param }} telah dibuat",
+            "updated": "Campaign Winner dengan id {{ param }} telah diperbaharui",
+            "deleted": "Campaign Winner dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Campaign Winner {{ id }}?"
+            },
+            "detail": {
+                "title": "Campaign Winner"
+            },
+            "winnerId": "Winner Id",
+            "winnerPrize": "Winner Prize",
+            "campaignDetails": "Campaign Details"
+        }
+    }
+}

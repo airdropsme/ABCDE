@@ -1,0 +1,26 @@
+
+{
+    "abcdeApp": {
+        "socialmediaDetails" : {
+            "home": {
+                "title": "Socialmedia Details",
+                "createLabel": "Buat Socialmedia Details baru",
+                "createOrEditLabel": "Buat atau edit Socialmedia Details"
+            },
+            "created": "Socialmedia Details dengan id {{ param }} telah dibuat",
+            "updated": "Socialmedia Details dengan id {{ param }} telah diperbaharui",
+            "deleted": "Socialmedia Details dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Socialmedia Details {{ id }}?"
+            },
+            "detail": {
+                "title": "Socialmedia Details"
+            },
+            "facebook": "Facebook",
+            "twitter": "Twitter",
+            "pinterest": "Pinterest",
+            "youtube": "Youtube",
+            "campaignDetails": "Campaign Details"
+        }
+    }
+}

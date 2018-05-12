@@ -1,0 +1,44 @@
+
+<div *ngIf="socialmediaDetails">
+    <h2><span jhiTranslate="abcdeApp.socialmediaDetails.detail.title">Socialmedia Details</span> {{socialmediaDetails.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="abcdeApp.socialmediaDetails.facebook">Facebook</span></dt>
+        <dd>
+            <span>{{socialmediaDetails.facebook}}</span>
+        </dd>
+        <dt><span jhiTranslate="abcdeApp.socialmediaDetails.twitter">Twitter</span></dt>
+        <dd>
+            <span>{{socialmediaDetails.twitter}}</span>
+        </dd>
+        <dt><span jhiTranslate="abcdeApp.socialmediaDetails.pinterest">Pinterest</span></dt>
+        <dd>
+            <span>{{socialmediaDetails.pinterest}}</span>
+        </dd>
+        <dt><span jhiTranslate="abcdeApp.socialmediaDetails.youtube">Youtube</span></dt>
+        <dd>
+            <span>{{socialmediaDetails.youtube}}</span>
+        </dd>
+        <dt><span jhiTranslate="abcdeApp.socialmediaDetails.campaignDetails">Campaign Details</span></dt>
+        <dd>
+            <div *ngIf="socialmediaDetails.campaignDetails">
+                <a [routerLink]="['/campaign-details', socialmediaDetails.campaignDetails?.id]">{{socialmediaDetails.campaignDetails?.id}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'socialmedia-details/'+ socialmediaDetails.id + '/edit'} }]"
+            replaceUrl="true"
+            queryParamsHandling="merge"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

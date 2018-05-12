@@ -1,0 +1,25 @@
+
+{
+    "abcdeApp": {
+        "registeredUser" : {
+            "home": {
+                "title": "Registered Users",
+                "createLabel": "Buat Registered User baru",
+                "createOrEditLabel": "Buat atau edit Registered User"
+            },
+            "created": "Registered User dengan id {{ param }} telah dibuat",
+            "updated": "Registered User dengan id {{ param }} telah diperbaharui",
+            "deleted": "Registered User dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Registered User {{ id }}?"
+            },
+            "detail": {
+                "title": "Registered User"
+            },
+            "joinDate": "Join Date",
+            "accountPlan": "Account Plan",
+            "email": "Email",
+            "emailVerified": "Email Verified"
+        }
+    }
+}

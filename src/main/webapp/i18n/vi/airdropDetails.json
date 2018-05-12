@@ -1,0 +1,25 @@
+
+{
+    "abcdeApp": {
+        "airdropDetails" : {
+            "home": {
+                "title": "Airdrop Details",
+                "createLabel": "Thêm mới một Airdrop Details",
+                "createOrEditLabel": "Thêm mới hoặc cập nhật Airdrop Details"
+            },
+            "created": "Một Airdrop Details mới được tạo với định danh {{ param }}",
+            "updated": "Một Airdrop Details cập nhật với định danh {{ param }}",
+            "deleted": "Một Airdrop Details đã xóa với định danh {{ param }}",
+            "delete": {
+                "question": "Bạn có chắc là muốn xóa Airdrop Details {{ id }}?"
+            },
+            "detail": {
+                "title": "Airdrop Details"
+            },
+            "title": "Title",
+            "currencyName": "Currency Name",
+            "currencyType": "Currency Type",
+            "contractAddress": "Contract Address"
+        }
+    }
+}

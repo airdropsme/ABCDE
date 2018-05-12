@@ -1,0 +1,24 @@
+
+{
+    "abcdeApp": {
+        "campaignAnalaytics" : {
+            "home": {
+                "title": "Campaign Analaytics",
+                "createLabel": "创建新 Campaign Analaytics",
+                "createOrEditLabel": "创建或编辑 Campaign Analaytics"
+            },
+            "created": "Campaign Analaytics {{ param }} 创建成功",
+            "updated": "Campaign Analaytics {{ param }} 更新成功",
+            "deleted": "Campaign Analaytics {{ param }} 删除成功",
+            "delete": {
+                "question": "你确定要删除 Campaign Analaytics {{ id }} 吗？"
+            },
+            "detail": {
+                "title": "Campaign Analaytics"
+            },
+            "views": "Views",
+            "referralCount": "Referral Count",
+            "campaignDetails": "Campaign Details"
+        }
+    }
+}

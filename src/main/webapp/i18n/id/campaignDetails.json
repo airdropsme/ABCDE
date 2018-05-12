@@ -1,0 +1,37 @@
+
+{
+    "abcdeApp": {
+        "campaignDetails" : {
+            "home": {
+                "title": "Campaign Details",
+                "createLabel": "Buat Campaign Details baru",
+                "createOrEditLabel": "Buat atau edit Campaign Details"
+            },
+            "created": "Campaign Details dengan id {{ param }} telah dibuat",
+            "updated": "Campaign Details dengan id {{ param }} telah diperbaharui",
+            "deleted": "Campaign Details dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Campaign Details {{ id }}?"
+            },
+            "detail": {
+                "title": "Campaign Details"
+            },
+            "title": "Title",
+            "status": "Status",
+            "campaignType": "Campaign Type",
+            "campaignPageUrl": "Campaign Page Url",
+            "prizeValue": "Prize Value",
+            "terms": "Terms",
+            "startdate": "Startdate",
+            "enddate": "Enddate",
+            "airdropDetails": "Airdrop Details",
+            "registeredUser": "Registered User",
+            "campaignanAlaytics": "Campaignan Alaytics",
+            "campaignParticipant": "Campaign Participant",
+            "socialmediaDetails": "Socialmedia Details",
+            "campaignWinner": "Campaign Winner",
+            "emailProvider": "Email Provider",
+            "campaignRewards": "Campaign Rewards"
+        }
+    }
+}

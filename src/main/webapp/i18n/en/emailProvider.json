@@ -1,0 +1,25 @@
+
+{
+    "abcdeApp": {
+        "emailProvider" : {
+            "home": {
+                "title": "Email Providers",
+                "createLabel": "Create a new Email Provider",
+                "createOrEditLabel": "Create or edit a Email Provider"
+            },
+            "created": "A new Email Provider is created with identifier {{ param }}",
+            "updated": "A Email Provider is updated with identifier {{ param }}",
+            "deleted": "A Email Provider is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Email Provider {{ id }}?"
+            },
+            "detail": {
+                "title": "Email Provider"
+            },
+            "name": "Name",
+            "connected": "Connected",
+            "apiKey": "Api Key",
+            "campaignDetails": "Campaign Details"
+        }
+    }
+}

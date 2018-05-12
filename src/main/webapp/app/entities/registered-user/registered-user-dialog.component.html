@@ -1,0 +1,50 @@
+<form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+
+    <div class="modal-header">
+        <h4 class="modal-title" id="myRegisteredUserLabel" jhiTranslate="abcdeApp.registeredUser.home.createOrEditLabel">Create or edit a Registered User</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                (click)="clear()">&times;</button>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" [hidden]="!registeredUser.id">
+            <label for="id" jhiTranslate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                   [(ngModel)]="registeredUser.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="abcdeApp.registeredUser.joinDate" for="field_joinDate">Join Date</label>
+            <div class="input-group">
+                <input id="field_joinDate" type="text" class="form-control" name="joinDate" ngbDatepicker  #joinDateDp="ngbDatepicker" [(ngModel)]="registeredUser.joinDate"
+                />
+                <span class="input-group-append">
+                    <button type="button" class="btn btn-secondary" (click)="joinDateDp.toggle()"><i class="fa fa-calendar"></i></button>
+                </span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="abcdeApp.registeredUser.accountPlan" for="field_accountPlan">Account Plan</label>
+            <input type="text" class="form-control" name="accountPlan" id="field_accountPlan"
+                [(ngModel)]="registeredUser.accountPlan" />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="abcdeApp.registeredUser.email" for="field_email">Email</label>
+            <input type="text" class="form-control" name="email" id="field_email"
+                [(ngModel)]="registeredUser.email" />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="abcdeApp.registeredUser.emailVerified" for="field_emailVerified">Email Verified</label>
+            <input type="checkbox" class="form-control" name="emailVerified" id="field_emailVerified"
+                [(ngModel)]="registeredUser.emailVerified" />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="clear()">
+            <span class="fa fa-ban"></span>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+            <span class="fa fa-save"></span>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

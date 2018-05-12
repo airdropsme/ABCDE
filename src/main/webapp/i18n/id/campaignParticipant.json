@@ -1,0 +1,26 @@
+
+{
+    "abcdeApp": {
+        "campaignParticipant" : {
+            "home": {
+                "title": "Campaign Participants",
+                "createLabel": "Buat Campaign Participant baru",
+                "createOrEditLabel": "Buat atau edit Campaign Participant"
+            },
+            "created": "Campaign Participant dengan id {{ param }} telah dibuat",
+            "updated": "Campaign Participant dengan id {{ param }} telah diperbaharui",
+            "deleted": "Campaign Participant dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Campaign Participant {{ id }}?"
+            },
+            "detail": {
+                "title": "Campaign Participant"
+            },
+            "name": "Name",
+            "email": "Email",
+            "uniqueURL": "Unique URL",
+            "points": "Points",
+            "campaignDetails": "Campaign Details"
+        }
+    }
+}

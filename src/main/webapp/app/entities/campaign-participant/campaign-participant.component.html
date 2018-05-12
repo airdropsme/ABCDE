@@ -1,0 +1,70 @@
+<div>
+    <h2>
+        <span jhiTranslate="abcdeApp.campaignParticipant.home.title">Campaign Participants</span>
+        <button class="btn btn-primary float-right jh-create-entity create-campaign-participant" [routerLink]="['/', { outlets: { popup: ['campaign-participant-new'] } }]">
+            <span class="fa fa-plus"></span>
+            <span  jhiTranslate="abcdeApp.campaignParticipant.home.createLabel">
+            Create new Campaign Participant
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <div class="row">
+    </div>
+    <br/>
+    <div class="table-responsive" *ngIf="campaignParticipants">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+            <th><span jhiTranslate="global.field.id">ID</span></th>
+            <th><span jhiTranslate="abcdeApp.campaignParticipant.name">Name</span></th>
+            <th><span jhiTranslate="abcdeApp.campaignParticipant.email">Email</span></th>
+            <th><span jhiTranslate="abcdeApp.campaignParticipant.uniqueURL">Unique URL</span></th>
+            <th><span jhiTranslate="abcdeApp.campaignParticipant.points">Points</span></th>
+            <th><span jhiTranslate="abcdeApp.campaignParticipant.campaignDetails">Campaign Details</span></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let campaignParticipant of campaignParticipants ;trackBy: trackId">
+                <td><a [routerLink]="['../campaign-participant', campaignParticipant.id ]">{{campaignParticipant.id}}</a></td>
+                <td>{{campaignParticipant.name}}</td>
+                <td>{{campaignParticipant.email}}</td>
+                <td>{{campaignParticipant.uniqueURL}}</td>
+                <td>{{campaignParticipant.points}}</td>
+                <td>
+                    <div *ngIf="campaignParticipant.campaignDetails">
+                        <a [routerLink]="['../campaign-details', campaignParticipant.campaignDetails?.id ]" >{{campaignParticipant.campaignDetails?.id}}</a>
+                    </div>
+                </td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['../campaign-participant', campaignParticipant.id ]"
+                                class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'campaign-participant/'+ campaignParticipant.id + '/edit'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-primary btn-sm">
+                            <span class="fa fa-pencil"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'campaign-participant/'+ campaignParticipant.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <span class="fa fa-remove"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

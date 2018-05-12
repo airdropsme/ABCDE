@@ -1,0 +1,26 @@
+
+{
+    "abcdeApp": {
+        "campaignParticipant" : {
+            "home": {
+                "title": "Campaign Participants",
+                "createLabel": "Thêm mới một Campaign Participant",
+                "createOrEditLabel": "Thêm mới hoặc cập nhật Campaign Participant"
+            },
+            "created": "Một Campaign Participant mới được tạo với định danh {{ param }}",
+            "updated": "Một Campaign Participant cập nhật với định danh {{ param }}",
+            "deleted": "Một Campaign Participant đã xóa với định danh {{ param }}",
+            "delete": {
+                "question": "Bạn có chắc là muốn xóa Campaign Participant {{ id }}?"
+            },
+            "detail": {
+                "title": "Campaign Participant"
+            },
+            "name": "Name",
+            "email": "Email",
+            "uniqueURL": "Unique URL",
+            "points": "Points",
+            "campaignDetails": "Campaign Details"
+        }
+    }
+}

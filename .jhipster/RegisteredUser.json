@@ -1,0 +1,28 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "joinDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "accountPlan",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "email",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "emailVerified",
+            "fieldType": "Boolean"
+        }
+    ],
+    "changelogDate": "20180512095533",
+    "entityTableName": "registered_user",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

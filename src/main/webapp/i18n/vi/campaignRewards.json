@@ -1,0 +1,24 @@
+
+{
+    "abcdeApp": {
+        "campaignRewards" : {
+            "home": {
+                "title": "Campaign Rewards",
+                "createLabel": "Thêm mới một Campaign Rewards",
+                "createOrEditLabel": "Thêm mới hoặc cập nhật Campaign Rewards"
+            },
+            "created": "Một Campaign Rewards mới được tạo với định danh {{ param }}",
+            "updated": "Một Campaign Rewards cập nhật với định danh {{ param }}",
+            "deleted": "Một Campaign Rewards đã xóa với định danh {{ param }}",
+            "delete": {
+                "question": "Bạn có chắc là muốn xóa Campaign Rewards {{ id }}?"
+            },
+            "detail": {
+                "title": "Campaign Rewards"
+            },
+            "rewardType": "Reward Type",
+            "rewardTotal": "Reward Total",
+            "campaignDetails": "Campaign Details"
+        }
+    }
+}

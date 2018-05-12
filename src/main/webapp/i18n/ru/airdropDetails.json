@@ -1,0 +1,25 @@
+
+{
+    "abcdeApp": {
+        "airdropDetails" : {
+            "home": {
+                "title": "Airdrop Details",
+                "createLabel": "Создать новый Airdrop Details",
+                "createOrEditLabel": "Создать или отредактировать Airdrop Details"
+            },
+            "created": "Новый Airdrop Details создан с идентификатором {{ param }}",
+            "updated": "Airdrop Details обновлен с идентификатором {{ param }}",
+            "deleted": "Airdrop Details удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Airdrop Details {{ id }}?"
+            },
+            "detail": {
+                "title": "Airdrop Details"
+            },
+            "title": "Title",
+            "currencyName": "Currency Name",
+            "currencyType": "Currency Type",
+            "contractAddress": "Contract Address"
+        }
+    }
+}

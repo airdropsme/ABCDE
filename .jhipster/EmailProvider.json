@@ -1,0 +1,31 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "campaignDetails",
+            "otherEntityName": "campaignDetails",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "connected",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "apiKey",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180512095536",
+    "entityTableName": "email_provider",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

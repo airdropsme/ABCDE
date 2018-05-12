@@ -1,0 +1,25 @@
+
+{
+    "abcdeApp": {
+        "emailProvider" : {
+            "home": {
+                "title": "Email Providers",
+                "createLabel": "创建新 Email Provider",
+                "createOrEditLabel": "创建或编辑 Email Provider"
+            },
+            "created": "Email Provider {{ param }} 创建成功",
+            "updated": "Email Provider {{ param }} 更新成功",
+            "deleted": "Email Provider {{ param }} 删除成功",
+            "delete": {
+                "question": "你确定要删除 Email Provider {{ id }} 吗？"
+            },
+            "detail": {
+                "title": "Email Provider"
+            },
+            "name": "Name",
+            "connected": "Connected",
+            "apiKey": "Api Key",
+            "campaignDetails": "Campaign Details"
+        }
+    }
+}

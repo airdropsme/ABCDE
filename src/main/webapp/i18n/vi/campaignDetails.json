@@ -1,0 +1,37 @@
+
+{
+    "abcdeApp": {
+        "campaignDetails" : {
+            "home": {
+                "title": "Campaign Details",
+                "createLabel": "Thêm mới một Campaign Details",
+                "createOrEditLabel": "Thêm mới hoặc cập nhật Campaign Details"
+            },
+            "created": "Một Campaign Details mới được tạo với định danh {{ param }}",
+            "updated": "Một Campaign Details cập nhật với định danh {{ param }}",
+            "deleted": "Một Campaign Details đã xóa với định danh {{ param }}",
+            "delete": {
+                "question": "Bạn có chắc là muốn xóa Campaign Details {{ id }}?"
+            },
+            "detail": {
+                "title": "Campaign Details"
+            },
+            "title": "Title",
+            "status": "Status",
+            "campaignType": "Campaign Type",
+            "campaignPageUrl": "Campaign Page Url",
+            "prizeValue": "Prize Value",
+            "terms": "Terms",
+            "startdate": "Startdate",
+            "enddate": "Enddate",
+            "airdropDetails": "Airdrop Details",
+            "registeredUser": "Registered User",
+            "campaignanAlaytics": "Campaignan Alaytics",
+            "campaignParticipant": "Campaign Participant",
+            "socialmediaDetails": "Socialmedia Details",
+            "campaignWinner": "Campaign Winner",
+            "emailProvider": "Email Provider",
+            "campaignRewards": "Campaign Rewards"
+        }
+    }
+}

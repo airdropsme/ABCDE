@@ -1,0 +1,24 @@
+
+{
+    "abcdeApp": {
+        "campaignWinner" : {
+            "home": {
+                "title": "Campaign Winners",
+                "createLabel": "Crear nuevo Campaign Winner",
+                "createOrEditLabel": "Crear o editar Campaign Winner"
+            },
+            "created": "Un nuevo Campaign Winner ha sido creado con el identificador {{ param }}",
+            "updated": "Un Campaign Winner ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Campaign Winner ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Campaign Winner {{ id }}?"
+            },
+            "detail": {
+                "title": "Campaign Winner"
+            },
+            "winnerId": "Winner Id",
+            "winnerPrize": "Winner Prize",
+            "campaignDetails": "Campaign Details"
+        }
+    }
+}

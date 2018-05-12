@@ -1,0 +1,26 @@
+
+{
+    "abcdeApp": {
+        "socialmediaDetails" : {
+            "home": {
+                "title": "Socialmedia Details",
+                "createLabel": "Thêm mới một Socialmedia Details",
+                "createOrEditLabel": "Thêm mới hoặc cập nhật Socialmedia Details"
+            },
+            "created": "Một Socialmedia Details mới được tạo với định danh {{ param }}",
+            "updated": "Một Socialmedia Details cập nhật với định danh {{ param }}",
+            "deleted": "Một Socialmedia Details đã xóa với định danh {{ param }}",
+            "delete": {
+                "question": "Bạn có chắc là muốn xóa Socialmedia Details {{ id }}?"
+            },
+            "detail": {
+                "title": "Socialmedia Details"
+            },
+            "facebook": "Facebook",
+            "twitter": "Twitter",
+            "pinterest": "Pinterest",
+            "youtube": "Youtube",
+            "campaignDetails": "Campaign Details"
+        }
+    }
+}

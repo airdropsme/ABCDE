@@ -1,0 +1,25 @@
+
+{
+    "abcdeApp": {
+        "registeredUser" : {
+            "home": {
+                "title": "Registered Users",
+                "createLabel": "Thêm mới một Registered User",
+                "createOrEditLabel": "Thêm mới hoặc cập nhật Registered User"
+            },
+            "created": "Một Registered User mới được tạo với định danh {{ param }}",
+            "updated": "Một Registered User cập nhật với định danh {{ param }}",
+            "deleted": "Một Registered User đã xóa với định danh {{ param }}",
+            "delete": {
+                "question": "Bạn có chắc là muốn xóa Registered User {{ id }}?"
+            },
+            "detail": {
+                "title": "Registered User"
+            },
+            "joinDate": "Join Date",
+            "accountPlan": "Account Plan",
+            "email": "Email",
+            "emailVerified": "Email Verified"
+        }
+    }
+}

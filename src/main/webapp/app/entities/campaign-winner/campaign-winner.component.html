@@ -1,0 +1,66 @@
+<div>
+    <h2>
+        <span jhiTranslate="abcdeApp.campaignWinner.home.title">Campaign Winners</span>
+        <button class="btn btn-primary float-right jh-create-entity create-campaign-winner" [routerLink]="['/', { outlets: { popup: ['campaign-winner-new'] } }]">
+            <span class="fa fa-plus"></span>
+            <span  jhiTranslate="abcdeApp.campaignWinner.home.createLabel">
+            Create new Campaign Winner
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <div class="row">
+    </div>
+    <br/>
+    <div class="table-responsive" *ngIf="campaignWinners">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+            <th><span jhiTranslate="global.field.id">ID</span></th>
+            <th><span jhiTranslate="abcdeApp.campaignWinner.winnerId">Winner Id</span></th>
+            <th><span jhiTranslate="abcdeApp.campaignWinner.winnerPrize">Winner Prize</span></th>
+            <th><span jhiTranslate="abcdeApp.campaignWinner.campaignDetails">Campaign Details</span></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let campaignWinner of campaignWinners ;trackBy: trackId">
+                <td><a [routerLink]="['../campaign-winner', campaignWinner.id ]">{{campaignWinner.id}}</a></td>
+                <td>{{campaignWinner.winnerId}}</td>
+                <td>{{campaignWinner.winnerPrize}}</td>
+                <td>
+                    <div *ngIf="campaignWinner.campaignDetails">
+                        <a [routerLink]="['../campaign-details', campaignWinner.campaignDetails?.id ]" >{{campaignWinner.campaignDetails?.id}}</a>
+                    </div>
+                </td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['../campaign-winner', campaignWinner.id ]"
+                                class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'campaign-winner/'+ campaignWinner.id + '/edit'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-primary btn-sm">
+                            <span class="fa fa-pencil"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'campaign-winner/'+ campaignWinner.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <span class="fa fa-remove"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

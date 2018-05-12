@@ -1,0 +1,37 @@
+
+{
+    "abcdeApp": {
+        "campaignDetails" : {
+            "home": {
+                "title": "Campaign Details",
+                "createLabel": "创建新 Campaign Details",
+                "createOrEditLabel": "创建或编辑 Campaign Details"
+            },
+            "created": "Campaign Details {{ param }} 创建成功",
+            "updated": "Campaign Details {{ param }} 更新成功",
+            "deleted": "Campaign Details {{ param }} 删除成功",
+            "delete": {
+                "question": "你确定要删除 Campaign Details {{ id }} 吗？"
+            },
+            "detail": {
+                "title": "Campaign Details"
+            },
+            "title": "Title",
+            "status": "Status",
+            "campaignType": "Campaign Type",
+            "campaignPageUrl": "Campaign Page Url",
+            "prizeValue": "Prize Value",
+            "terms": "Terms",
+            "startdate": "Startdate",
+            "enddate": "Enddate",
+            "airdropDetails": "Airdrop Details",
+            "registeredUser": "Registered User",
+            "campaignanAlaytics": "Campaignan Alaytics",
+            "campaignParticipant": "Campaign Participant",
+            "socialmediaDetails": "Socialmedia Details",
+            "campaignWinner": "Campaign Winner",
+            "emailProvider": "Email Provider",
+            "campaignRewards": "Campaign Rewards"
+        }
+    }
+}

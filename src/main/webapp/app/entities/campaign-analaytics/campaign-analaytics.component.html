@@ -1,0 +1,66 @@
+<div>
+    <h2>
+        <span jhiTranslate="abcdeApp.campaignAnalaytics.home.title">Campaign Analaytics</span>
+        <button class="btn btn-primary float-right jh-create-entity create-campaign-analaytics" [routerLink]="['/', { outlets: { popup: ['campaign-analaytics-new'] } }]">
+            <span class="fa fa-plus"></span>
+            <span  jhiTranslate="abcdeApp.campaignAnalaytics.home.createLabel">
+            Create new Campaign Analaytics
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <div class="row">
+    </div>
+    <br/>
+    <div class="table-responsive" *ngIf="campaignAnalaytics">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+            <th><span jhiTranslate="global.field.id">ID</span></th>
+            <th><span jhiTranslate="abcdeApp.campaignAnalaytics.views">Views</span></th>
+            <th><span jhiTranslate="abcdeApp.campaignAnalaytics.referralCount">Referral Count</span></th>
+            <th><span jhiTranslate="abcdeApp.campaignAnalaytics.campaignDetails">Campaign Details</span></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let campaignAnalaytics of campaignAnalaytics ;trackBy: trackId">
+                <td><a [routerLink]="['../campaign-analaytics', campaignAnalaytics.id ]">{{campaignAnalaytics.id}}</a></td>
+                <td>{{campaignAnalaytics.views}}</td>
+                <td>{{campaignAnalaytics.referralCount}}</td>
+                <td>
+                    <div *ngIf="campaignAnalaytics.campaignDetails">
+                        <a [routerLink]="['../campaign-details', campaignAnalaytics.campaignDetails?.id ]" >{{campaignAnalaytics.campaignDetails?.id}}</a>
+                    </div>
+                </td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['../campaign-analaytics', campaignAnalaytics.id ]"
+                                class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'campaign-analaytics/'+ campaignAnalaytics.id + '/edit'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-primary btn-sm">
+                            <span class="fa fa-pencil"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'campaign-analaytics/'+ campaignAnalaytics.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <span class="fa fa-remove"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

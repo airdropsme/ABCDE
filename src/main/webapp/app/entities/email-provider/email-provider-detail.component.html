@@ -1,0 +1,40 @@
+
+<div *ngIf="emailProvider">
+    <h2><span jhiTranslate="abcdeApp.emailProvider.detail.title">Email Provider</span> {{emailProvider.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="abcdeApp.emailProvider.name">Name</span></dt>
+        <dd>
+            <span>{{emailProvider.name}}</span>
+        </dd>
+        <dt><span jhiTranslate="abcdeApp.emailProvider.connected">Connected</span></dt>
+        <dd>
+            <span>{{emailProvider.connected}}</span>
+        </dd>
+        <dt><span jhiTranslate="abcdeApp.emailProvider.apiKey">Api Key</span></dt>
+        <dd>
+            <span>{{emailProvider.apiKey}}</span>
+        </dd>
+        <dt><span jhiTranslate="abcdeApp.emailProvider.campaignDetails">Campaign Details</span></dt>
+        <dd>
+            <div *ngIf="emailProvider.campaignDetails">
+                <a [routerLink]="['/campaign-details', emailProvider.campaignDetails?.id]">{{emailProvider.campaignDetails?.id}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'email-provider/'+ emailProvider.id + '/edit'} }]"
+            replaceUrl="true"
+            queryParamsHandling="merge"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

@@ -1,0 +1,26 @@
+
+{
+    "abcdeApp": {
+        "socialmediaDetails" : {
+            "home": {
+                "title": "Socialmedia Details",
+                "createLabel": "Create a new Socialmedia Details",
+                "createOrEditLabel": "Create or edit a Socialmedia Details"
+            },
+            "created": "A new Socialmedia Details is created with identifier {{ param }}",
+            "updated": "A Socialmedia Details is updated with identifier {{ param }}",
+            "deleted": "A Socialmedia Details is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Socialmedia Details {{ id }}?"
+            },
+            "detail": {
+                "title": "Socialmedia Details"
+            },
+            "facebook": "Facebook",
+            "twitter": "Twitter",
+            "pinterest": "Pinterest",
+            "youtube": "Youtube",
+            "campaignDetails": "Campaign Details"
+        }
+    }
+}

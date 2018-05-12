@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180512095531_added_entity_CampaignAnalaytics.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180512095532_added_entity_CampaignParticipant.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180512095533_added_entity_RegisteredUser.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180512095534_added_entity_SocialmediaDetails.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180512095535_added_entity_CampaignWinner.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180512095536_added_entity_EmailProvider.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180512095537_added_entity_AirdropDetails.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180512095538_added_entity_CampaignDetails.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180512095539_added_entity_CampaignRewards.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20180512095531_added_entity_constraints_CampaignAnalaytics.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180512095532_added_entity_constraints_CampaignParticipant.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180512095534_added_entity_constraints_SocialmediaDetails.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180512095535_added_entity_constraints_CampaignWinner.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180512095536_added_entity_constraints_EmailProvider.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180512095538_added_entity_constraints_CampaignDetails.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180512095539_added_entity_constraints_CampaignRewards.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
+</databaseChangeLog>
